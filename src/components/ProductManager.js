@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 
-class ProductManager {
+export default class ProductManager {
     constructor() {
         this.patch = "./productos.txt";
         this.products = [];
@@ -60,16 +60,27 @@ class ProductManager {
     };
 }
 
-const productos = new ProductManager();
+/*const productos = new ProductManager();
+ */
 
-/*productos.addProduct("Titulo1", "Description1", 1000, "Imagen1", "abc123", 5);
-productos.addProduct("Titulo2", "Description2", 2000, "Imagen2", "abc123", 10);*/
+/*productos.addProduct("Titulo1", "Description1", 1000, "Imagen1", "abc121", 1);
+productos.addProduct("Titulo2", "Description2", 2000, "Imagen2", "abc122", 2);
+productos.addProduct("Titulo3", "Description3", 1000, "Imagen3", "abc123", 3);
+productos.addProduct("Titulo4", "Description4", 1000, "Imagen4", "abc124", 4);
+productos.addProduct("Titulo5", "Description5", 1000, "Imagen5", "abc125", 5);
+productos.addProduct("Titulo6", "Description6", 1000, "Imagen6", "abc126", 4);
+productos.addProduct("Titulo7", "Description7", 1000, "Imagen7", "abc127", 3);
+productos.addProduct("Titulo8", "Description8", 1000, "Imagen8", "abc128", 2);
+productos.addProduct("Titulo9", "Description9", 1000, "Imagen9", "abc129", 1);
+productos.addProduct("Titulo10", "Description10", 1000, "Imagen10", "abc130", 2);
+*/
 
-/*productos.getProducts();*/
+/*productos.getProducts();
+ */
 
 /*productos.getProductsById(2);
 productos.deleteProductsById(2);*/
-productos.updateProducts({
+/*productos.updateProducts({
     title: "Titulo2",
     description: "Description2",
     price: 4200,
@@ -77,4 +88,4 @@ productos.updateProducts({
     code: "abc123",
     stock: 10,
     id: 2,
-});
+});*/
